@@ -54,3 +54,44 @@ for(var i=0; i<100; i++){
         console.log(primes);
     }
 }
+
+var student1={
+    id: "1",
+    name:"Ben",
+    phone: 39408240243,
+    birthyear:1982
+}
+
+var student2={
+    id:"2",
+    name:"John",
+    phone: 39408240243,
+    birthyear:1980
+}
+
+var student3={
+    id:"3",
+    name:"Torri",
+    phone: 39408240243,
+    birthyear:1973
+}
+
+var studentMap= {}
+studentMap[student1.id] = student1;
+studentMap[student2.id] = student2;
+studentMap[student3.id] = student3;
+
+
+
+console.log(studentMap["1"].name);
+console.log(studentMap["2"].name);
+
+var states = {
+    "IN":"Indiana",
+    "IL":"Illinois"
+}
+
+for (var stateCode in states){
+    console.log(states[stateCode]);
+}
+
